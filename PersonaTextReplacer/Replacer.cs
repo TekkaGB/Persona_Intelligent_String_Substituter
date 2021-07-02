@@ -233,7 +233,15 @@ namespace PersonaTextReplacer
 
         public static bool EditMsg(string file, Dictionary<string, string> words)
         {
-            var lines = File.ReadAllLines(file);
+            string[] lines = new string[0];
+            try
+            {
+                lines = File.ReadAllLines(file);
+            }
+            catch (Exception e)
+            {
+                Globals.logger.WriteLine(e.Message, LoggerType.Error);
+            }
             var replacedLines = 0;
             var editedLines = new List<String>();
             foreach (var line in lines)
