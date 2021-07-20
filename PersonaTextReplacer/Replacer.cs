@@ -267,7 +267,10 @@ namespace PersonaTextReplacer
                         newLine = "";
                         foreach (var s in split)
                         {
-                            if (s.StartsWith("[") && s.EndsWith("]"))
+                            if ((Game)Settings.Default.Game == Game.Persona5 &&
+                                (s.Equals("[s]", StringComparison.InvariantCultureIgnoreCase) || s.Equals("[f 2 1]", StringComparison.InvariantCultureIgnoreCase)))
+                                newLine += $"[f 0 5 -258]{s}";
+                            else if (s.StartsWith("[") && s.EndsWith("]"))
                                 newLine += s;
                             else
                                 newLine += Regex.Replace(s, word, words[key], options);
