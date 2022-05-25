@@ -26,7 +26,8 @@ namespace PersonaTextReplacer
         public enum Game
         {
             Persona4Golden,
-            Persona5
+            Persona5,
+            Persona5Royal
         }
         public MainWindow()
         {
@@ -35,6 +36,7 @@ namespace PersonaTextReplacer
             GameBox.SelectedIndex = Settings.Default.Game;
             CaseCheckbox.IsChecked = Settings.Default.Case;
             WholeWordCheckbox.IsChecked = Settings.Default.WholeWord;
+            ParamCheckbox.IsChecked = Settings.Default.Param;
             if (!String.IsNullOrEmpty(Settings.Default.InputPath))
                 InputPathBox.Text = Settings.Default.InputPath;
             if (!String.IsNullOrEmpty(Settings.Default.OutputPath))
@@ -204,6 +206,11 @@ namespace PersonaTextReplacer
         private void WholeWordCheckBox_Checked(object sender, RoutedEventArgs e)
         {
             Settings.Default.WholeWord = (bool)WholeWordCheckbox.IsChecked;
+            Settings.Default.Save();
+        }
+        private void ParamCheckBox_Checked(object sender, RoutedEventArgs e)
+        {
+            Settings.Default.Param = (bool)ParamCheckbox.IsChecked;
             Settings.Default.Save();
         }
     }

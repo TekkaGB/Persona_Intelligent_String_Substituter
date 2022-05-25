@@ -144,6 +144,9 @@ namespace PersonaTextReplacer
                 case Game.Persona5:
                     gameArgs = "-Library P5 -Encoding P5";
                     break;
+                case Game.Persona5Royal:
+                    gameArgs = "-Library P5R -Encoding P5";
+                    break;
             }
             ProcessStartInfo StartInfo = new ProcessStartInfo();
             StartInfo.CreateNoWindow = true;
@@ -168,6 +171,9 @@ namespace PersonaTextReplacer
                     break;
                 case Game.Persona5:
                     gameArgs = "-OutFormat V1BE -Library P5 -Encoding P5";
+                    break;
+                case Game.Persona5Royal:
+                    gameArgs = "-OutFormat V1BE -Library P5R -Encoding P5";
                     break;
             }
             ProcessStartInfo StartInfo = new ProcessStartInfo();
@@ -267,10 +273,10 @@ namespace PersonaTextReplacer
                         newLine = "";
                         foreach (var s in split)
                         {
-                            if ((Game)Settings.Default.Game == Game.Persona5 &&
+                            if (((Game)Settings.Default.Game == Game.Persona5 || (Game)Settings.Default.Game == Game.Persona5Royal) &&
                                 (s.Equals("[s]", StringComparison.InvariantCultureIgnoreCase) || s.Equals("[f 2 1]", StringComparison.InvariantCultureIgnoreCase)))
                                 newLine += $"[f 0 5 -258]{s}";
-                            else if (s.StartsWith("[") && s.EndsWith("]"))
+                            else if (s.StartsWith("[") && s.EndsWith("]") && !Settings.Default.Param)
                                 newLine += s;
                             else
                                 newLine += Regex.Replace(s, word, words[key], options);

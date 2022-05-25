@@ -82,5 +82,17 @@ namespace PersonaTextReplacer.Properties {
                 this["OutputPath"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool Param {
+            get {
+                return ((bool)(this["Param"]));
+            }
+            set {
+                this["Param"] = value;
+            }
+        }
     }
 }
