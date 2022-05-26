@@ -42,7 +42,7 @@ namespace PersonaTextReplacer
             if (!String.IsNullOrEmpty(Settings.Default.OutputPath))
                 OutputPathBox.Text = Settings.Default.OutputPath;
             Globals.logger.WriteLine("Welcome to PISS!", LoggerType.Info);
-            if (!File.Exists(Globals.asc) || !File.Exists(Globals.pe) || !File.Exists(Globals.pmse))
+            if (!File.Exists(Globals.asc) || !File.Exists(Globals.pe) || !File.Exists(Globals.leet))
                 Globals.logger.WriteLine("Some dependency files are missing!", LoggerType.Error);
         }
         private void SetInputPath(object sender, RoutedEventArgs e)
@@ -76,7 +76,7 @@ namespace PersonaTextReplacer
         private async void Replace(object sender, RoutedEventArgs e)
         {
             // Check if we have everything needed
-            if (!File.Exists(Globals.asc) || !File.Exists(Globals.pe) || !File.Exists(Globals.pmse))
+            if (!File.Exists(Globals.asc) || !File.Exists(Globals.pe) || !File.Exists(Globals.leet))
             {
                 Globals.logger.WriteLine("Some dependency files are missing!", LoggerType.Error);
                 return;

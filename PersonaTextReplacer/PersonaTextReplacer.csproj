@@ -110,90 +110,6 @@
     <None Remove="Dependencies\PersonaEditor\PersonaEditorCMD.exe" />
     <None Remove="Dependencies\PersonaEditor\PersonaEditorCMD.exe.config" />
     <None Remove="Dependencies\PersonaEditor\PersonaEditorLib.dll" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Antlr4.Runtime.dll" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\AtlusScriptLibrary.dll" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\DigitalDevilSaga.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\DigitalDevilSaga\FlowScriptModules.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\DigitalDevilSaga\MessageScriptLibrary.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\DigitalDevilSaga\Modules\Common\Enums.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\DigitalDevilSaga\Modules\Common\Functions.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\Nocturne.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\Nocturne\FlowScriptModules.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\Nocturne\MessageScriptLibrary.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\Nocturne\Modules\Common\Enums.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\Nocturne\Modules\Common\Functions.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\Persona3.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\Persona3FES.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\Persona3FES\FlowScriptModules.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\Persona3FES\MessageScriptLibrary.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\Persona3FES\Modules\Common\Enums.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\Persona3FES\Modules\Common\Functions.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\Persona3Portable.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\Persona3Portable\Enums.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\Persona3Portable\FlowScriptModules.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\Persona3Portable\MessageScriptLibrary.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\Persona3Portable\Modules\AI\Functions.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\Persona3Portable\Modules\Common\Functions.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\Persona3Portable\Modules\Event\Functions.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\Persona3Portable\Modules\Facility\Functions.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\Persona3Portable\Modules\Field\Functions.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\Persona3Portable\Modules\Shared\Functions.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\Persona3\FlowScriptModules.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\Persona3\MessageScriptLibrary.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\Persona3\Modules\Common\Functions.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\Persona4.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\Persona4Golden.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\Persona4Golden\FlowScriptModules.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\Persona4Golden\MessageScriptLibrary.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\Persona4Golden\Modules\AI\Enums.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\Persona4Golden\Modules\AI\Functions.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\Persona4Golden\Modules\Common\Functions.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\Persona4Golden\Modules\Event\Functions.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\Persona4Golden\Modules\Facility\Functions.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\Persona4Golden\Modules\Field\Functions.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\Persona4Golden\Modules\Net\Functions.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\Persona4\FlowScriptModules.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\Persona4\MessageScriptLibrary.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\Persona4\Modules\AI\Enums.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\Persona4\Modules\AI\Functions.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\Persona4\Modules\Common\Functions.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\Persona4\Modules\Event\Functions.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\Persona4\Modules\Field\Functions.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\Persona5.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\Persona5Royal.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\Persona5Royal\FlowScriptModules.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\Persona5Royal\MessageScriptLibrary.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\Persona5Royal\Modules\AI\Functions.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\Persona5Royal\Modules\Common\Functions.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\Persona5Royal\Modules\Facility\Functions.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\Persona5Royal\Modules\Field\Functions.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\Persona5Royal\Modules\Net\Functions.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\Persona5Royal\Modules\Social\Functions.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\Persona5\FlowScriptModules.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\Persona5\MessageScriptLibrary.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\Persona5\Modules\AI\Enums.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\Persona5\Modules\AI\Functions.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\Persona5\Modules\Common\Enums.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\Persona5\Modules\Common\Functions.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\Persona5\Modules\Facility\Functions.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\Persona5\Modules\Field\Enums.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\Persona5\Modules\Field\Functions.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\Persona5\Modules\Net\Functions.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\Persona5\Modules\Social\Functions.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\PersonaQ2.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\PersonaQ2\FlowScriptModules.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\PersonaQ2\MessageScriptLibrary.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\PersonaQ2\Modules\Battle\Functions.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\PersonaQ2\Modules\Camp\Functions.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\PersonaQ2\Modules\Common\Functions.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\PersonaQ2\Modules\Dungeon\Functions.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\PersonaQ2\Modules\Event\Functions.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\PersonaQ2\Modules\Facility\Functions.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\PersonaQ2\Modules\Map\Functions.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\PersonaQ2\Modules\Script\Functions.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Libraries\PersonaQ2\Modules\Window\Functions.json" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\Newtonsoft.Json.dll" />
-    <None Remove="Dependencies\PM1MessageScriptEditor\PM1MessageScriptEditor.exe" />
   </ItemGroup>
 
   <ItemGroup>
@@ -497,258 +413,6 @@
     <Content Include="Dependencies\PersonaEditor\PersonaEditorLib.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Antlr4.Runtime.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\AtlusScriptLibrary.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\DigitalDevilSaga.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\DigitalDevilSaga\FlowScriptModules.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\DigitalDevilSaga\MessageScriptLibrary.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\DigitalDevilSaga\Modules\Common\Enums.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\DigitalDevilSaga\Modules\Common\Functions.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\Nocturne.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\Nocturne\FlowScriptModules.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\Nocturne\MessageScriptLibrary.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\Nocturne\Modules\Common\Enums.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\Nocturne\Modules\Common\Functions.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\Persona3.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\Persona3FES.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\Persona3FES\FlowScriptModules.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\Persona3FES\MessageScriptLibrary.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\Persona3FES\Modules\Common\Enums.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\Persona3FES\Modules\Common\Functions.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\Persona3Portable.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\Persona3Portable\Enums.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\Persona3Portable\FlowScriptModules.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\Persona3Portable\MessageScriptLibrary.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\Persona3Portable\Modules\AI\Functions.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\Persona3Portable\Modules\Common\Functions.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\Persona3Portable\Modules\Event\Functions.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\Persona3Portable\Modules\Facility\Functions.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\Persona3Portable\Modules\Field\Functions.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\Persona3Portable\Modules\Shared\Functions.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\Persona3\FlowScriptModules.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\Persona3\MessageScriptLibrary.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\Persona3\Modules\Common\Functions.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\Persona4.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\Persona4Golden.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\Persona4Golden\FlowScriptModules.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\Persona4Golden\MessageScriptLibrary.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\Persona4Golden\Modules\AI\Enums.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\Persona4Golden\Modules\AI\Functions.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\Persona4Golden\Modules\Common\Functions.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\Persona4Golden\Modules\Event\Functions.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\Persona4Golden\Modules\Facility\Functions.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\Persona4Golden\Modules\Field\Functions.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\Persona4Golden\Modules\Net\Functions.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\Persona4\FlowScriptModules.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\Persona4\MessageScriptLibrary.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\Persona4\Modules\AI\Enums.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\Persona4\Modules\AI\Functions.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\Persona4\Modules\Common\Functions.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\Persona4\Modules\Event\Functions.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\Persona4\Modules\Field\Functions.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\Persona5.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\Persona5Royal.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\Persona5Royal\FlowScriptModules.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\Persona5Royal\MessageScriptLibrary.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\Persona5Royal\Modules\AI\Functions.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\Persona5Royal\Modules\Common\Functions.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\Persona5Royal\Modules\Facility\Functions.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\Persona5Royal\Modules\Field\Functions.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\Persona5Royal\Modules\Net\Functions.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\Persona5Royal\Modules\Social\Functions.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\Persona5\FlowScriptModules.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\Persona5\MessageScriptLibrary.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\Persona5\Modules\AI\Enums.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\Persona5\Modules\AI\Functions.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\Persona5\Modules\Common\Enums.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\Persona5\Modules\Common\Functions.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\Persona5\Modules\Facility\Functions.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\Persona5\Modules\Field\Enums.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\Persona5\Modules\Field\Functions.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\Persona5\Modules\Net\Functions.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\Persona5\Modules\Social\Functions.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\PersonaQ2.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\PersonaQ2\FlowScriptModules.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\PersonaQ2\MessageScriptLibrary.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\PersonaQ2\Modules\Battle\Functions.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\PersonaQ2\Modules\Camp\Functions.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\PersonaQ2\Modules\Common\Functions.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\PersonaQ2\Modules\Dungeon\Functions.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\PersonaQ2\Modules\Event\Functions.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\PersonaQ2\Modules\Facility\Functions.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\PersonaQ2\Modules\Map\Functions.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\PersonaQ2\Modules\Script\Functions.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Libraries\PersonaQ2\Modules\Window\Functions.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\Newtonsoft.Json.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Dependencies\PM1MessageScriptEditor\PM1MessageScriptEditor.exe">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
   </ItemGroup>
 
   <ItemGroup>
@@ -768,6 +432,24 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="Dependencies\AtlusScriptTools\Libraries\DigitalDevilSaga\Modules\Common\Functions.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Dependencies\LEET\LEET.deps.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Dependencies\LEET\LEET.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Dependencies\LEET\LEET.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Dependencies\LEET\LEET.runtimeconfig.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Dependencies\LEET\LibellusLibrary.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Dependencies\LEET\Newtonsoft.Json.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="Properties\Settings.settings">

@@ -14,7 +14,7 @@ namespace PersonaTextReplacer
         public static char s = Path.DirectorySeparatorChar;
         public static string asc = $"{AssemblyLocation}{s}Dependencies{s}AtlusScriptTools{s}AtlusScriptCompiler.exe";
         public static string pe = $"{AssemblyLocation}{s}Dependencies{s}PersonaEditor{s}PersonaEditorCMD.exe";
-        public static string pmse = $"{AssemblyLocation}{s}Dependencies{s}PM1MessageScriptEditor{s}PM1MessageScriptEditor.exe";
+        public static string leet = $"{AssemblyLocation}{s}Dependencies{s}LEET{s}LEET.exe";
         public static Logger logger;
     }
 }

@@ -16,34 +16,44 @@ namespace PersonaTextReplacer
         public static int Replace(Dictionary<string, string> words, string input)
         {
             var editedFiles = 0;
-            string msg, bmd;
+            string msg, bmd, json;
             foreach (var file in Directory.EnumerateFiles(input, "*", SearchOption.AllDirectories))
             {
                 var ext = Path.GetExtension(file).ToLower();
                 switch (ext)
                 {
                     case ".pm1":
-                        PM1CMD(file);
-                        Globals.logger.WriteLine($"Decompiled MSG from {file}", LoggerType.Info);
-                        msg = ChangeExtension(file, ".msg");
-                        if (EditMsg(msg, words))
+                        LEETCommand(file);
+                        bmd = ChangeExtension(file, $"{Globals.s}{Path.GetFileNameWithoutExtension(file)}.bmd");
+                        json = ChangeExtension(file, $"{Globals.s}{Path.GetFileNameWithoutExtension(file)}.PM1.json");
+                        if (File.Exists(bmd) && File.Exists(json))
                         {
-                            editedFiles++;
-                            Globals.logger.WriteLine($"Edited {msg}", LoggerType.Info);
-                            PM1CMD(msg);
-                            Globals.logger.WriteLine($"Recompiled PM1 from {msg}", LoggerType.Info);
+                            Globals.logger.WriteLine($"Extracted bmd from {file}", LoggerType.Info);
+                            ASCDecompile(bmd);
+                            Globals.logger.WriteLine($"Decompiled MSG from {bmd}", LoggerType.Info);
+                            msg = $"{bmd}.msg";
+                            if (EditMsg(msg, words))
+                            {
+                                editedFiles++;
+                                Globals.logger.WriteLine($"Edited {msg}", LoggerType.Info);
+                                ASCCompile(msg);
+                                Globals.logger.WriteLine($"Recompiled {msg}", LoggerType.Info);
+                                LEETCommand(json);
+                                File.Copy($"{json}.PM1", file, true);
+                                Directory.Delete(ChangeExtension(file, String.Empty), true);
+                                Globals.logger.WriteLine($"Imported bmd back into {file}", LoggerType.Info);
+                                break;
+                            }
                         }
-                        else
-                        {
-                            Globals.logger.WriteLine($"No words found in {file}, deleting...", LoggerType.Info);
-                            File.Delete(file);
-                        }
-                        File.Delete(msg);
+                        Globals.logger.WriteLine($"No words found in {file}, deleting...", LoggerType.Info);
+                        Directory.Delete(ChangeExtension(file, String.Empty), true);
+                        File.Delete(file);
                         break;
                     case ".bf":
                         PEExport(file);
                         Globals.logger.WriteLine($"Extracted bmd from {file}", LoggerType.Info);
                         bmd = ChangeExtension(file, ".BMD");
+                        msg = ChangeExtension(file, ".msg");
                         if (File.Exists(bmd))
                         {
                             ASCDecompile(bmd);
@@ -190,22 +200,26 @@ namespace PersonaTextReplacer
             }
             File.Delete(file);
         }
-        public static void PM1CMD(string file)
+        public static void LEETCommand(string file)
         {
             ProcessStartInfo StartInfo = new ProcessStartInfo();
             StartInfo.CreateNoWindow = true;
             StartInfo.UseShellExecute = false;
-            StartInfo.FileName = Globals.pmse;
+            StartInfo.FileName = Globals.leet;
             StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
-            StartInfo.Arguments = $@"""{file}"" p4";
+            StartInfo.Arguments = $@"""{file}""";
+            StartInfo.RedirectStandardInput = true;
             using (Process process = new Process())
             {
                 process.StartInfo = StartInfo;
                 process.Start();
+                StreamWriter myStreamWriter = process.StandardInput;
+
+                myStreamWriter.WriteLine(" ");
+                myStreamWriter.Close();
                 process.WaitForExit();
             }
         }
-
         public static void PEExport(string file)
         {
             ProcessStartInfo StartInfo = new ProcessStartInfo();
@@ -257,7 +271,7 @@ namespace PersonaTextReplacer
                 var options = Settings.Default.Case ? RegexOptions.None : RegexOptions.IgnoreCase;
                 foreach (var key in words.Keys)
                 {
-                    var word = Settings.Default.WholeWord ? $"\b{key}\b" : key;
+                    var word = Settings.Default.WholeWord ? $@"\b({key})\b" : key;
                     // Line with name (Replace only name and not index names)
                     if (nameMatch.Success)
                     {
