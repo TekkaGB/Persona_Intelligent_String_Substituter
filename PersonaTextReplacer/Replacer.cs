@@ -269,6 +269,7 @@ namespace PersonaTextReplacer
                 var newLine = line;
                 var nameMatch = Regex.Match(line, @"\[[A-Z][a-z\-\' ]*\]");
                 var options = Settings.Default.Case ? RegexOptions.None : RegexOptions.IgnoreCase;
+                bool lineReplaced = false;
                 foreach (var key in words.Keys)
                 {
                     var word = Settings.Default.WholeWord ? $@"\b({key})\b" : key;
@@ -277,6 +278,8 @@ namespace PersonaTextReplacer
                     {
                         var name = newLine[nameMatch.Index..(nameMatch.Index + nameMatch.Length)];
                         var newName = Regex.Replace(name, word, words[key], options);
+                        if (name != newName)
+                            lineReplaced = true;
                         newLine = newLine.Replace(name, newName);
                     }
                     // Normal Line (Replace entire line)
@@ -293,11 +296,16 @@ namespace PersonaTextReplacer
                             else if (s.StartsWith("[") && s.EndsWith("]") && !Settings.Default.Param)
                                 newLine += s;
                             else
-                                newLine += Regex.Replace(s, word, words[key], options);
+                            {
+                                var replacedLine = Regex.Replace(s, word, words[key], options);
+                                newLine += replacedLine;
+                                if (s != replacedLine)
+                                    lineReplaced = true;
+                            }
                         }
                     }
                 }
-                if (line != newLine)
+                if (lineReplaced)
                 {
                     replacedLines++;
                     Globals.logger.WriteLine($@"{Environment.NewLine}BEFORE{Environment.NewLine}{line}{Environment.NewLine}AFTER{Environment.NewLine}{newLine}", LoggerType.Info);
