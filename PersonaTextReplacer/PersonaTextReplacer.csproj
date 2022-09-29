@@ -434,22 +434,22 @@
     <None Update="Dependencies\AtlusScriptTools\Libraries\DigitalDevilSaga\Modules\Common\Functions.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="Dependencies\LEET\LEET.deps.json">
+    <None Update="Dependencies\LEET\Libellus Event Editing Tool.deps.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="Dependencies\LEET\LEET.dll">
+    <None Update="Dependencies\LEET\Libellus Event Editing Tool.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="Dependencies\LEET\LEET.exe">
+    <None Update="Dependencies\LEET\Libellus Event Editing Tool.dll.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="Dependencies\LEET\LEET.runtimeconfig.json">
+    <None Update="Dependencies\LEET\Libellus Event Editing Tool.exe">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="Dependencies\LEET\LibellusLibrary.dll">
+    <None Update="Dependencies\LEET\Libellus Event Editing Tool.runtimeconfig.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="Dependencies\LEET\Newtonsoft.Json.dll">
+    <None Update="Dependencies\LEET\Libellus Library.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="Properties\Settings.settings">

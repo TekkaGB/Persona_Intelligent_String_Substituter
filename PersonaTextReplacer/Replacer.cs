@@ -276,7 +276,7 @@ namespace PersonaTextReplacer
                     // Line with name (Replace only name and not index names)
                     if (nameMatch.Success)
                     {
-                        var name = newLine[nameMatch.Index..(nameMatch.Index + nameMatch.Length)];
+                        var name = newLine.Substring(nameMatch.Index, nameMatch.Length - 1);
                         var newName = Regex.Replace(name, word, words[key], options);
                         if (name != newName)
                             lineReplaced = true;
@@ -294,7 +294,12 @@ namespace PersonaTextReplacer
                                 (s.Equals("[s]", StringComparison.InvariantCultureIgnoreCase) || s.Equals("[f 2 1]", StringComparison.InvariantCultureIgnoreCase)))
                                 newLine += $"[f 0 5 -258]{s}";
                             else if (s.StartsWith("[") && s.EndsWith("]") && !Settings.Default.Param)
-                                newLine += s;
+                            {
+                                if (s.StartsWith("[bup") && Settings.Default.BustupNuke)
+                                    continue;
+                                else
+                                    newLine += s;
+                            }
                             else
                             {
                                 var replacedLine = Regex.Replace(s, word, words[key], options);

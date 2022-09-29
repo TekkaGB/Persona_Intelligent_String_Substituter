@@ -37,6 +37,7 @@ namespace PersonaTextReplacer
             CaseCheckbox.IsChecked = Settings.Default.Case;
             WholeWordCheckbox.IsChecked = Settings.Default.WholeWord;
             ParamCheckbox.IsChecked = Settings.Default.Param;
+            BustupNukeCheckbox.IsChecked = Settings.Default.BustupNuke;
             if (!String.IsNullOrEmpty(Settings.Default.InputPath))
                 InputPathBox.Text = Settings.Default.InputPath;
             if (!String.IsNullOrEmpty(Settings.Default.OutputPath))
@@ -91,7 +92,7 @@ namespace PersonaTextReplacer
                 Globals.logger.WriteLine("Please select valid output path first", LoggerType.Error);
                 return;
             }
-            if (Input.Text.Length == 0 || Output.Text.Length == 0)
+            if (Input.Text.Length == 0 && Output.Text.Length == 0 && !Settings.Default.BustupNuke)
             {
                 Globals.logger.WriteLine("No words inputted", LoggerType.Error);
                 return;
@@ -99,6 +100,8 @@ namespace PersonaTextReplacer
             ReplaceButton.IsEnabled = false;
             CaseCheckbox.IsEnabled = false;
             WholeWordCheckbox.IsEnabled = false;
+            ParamCheckbox.IsEnabled = false;
+            BustupNukeCheckbox.IsEnabled = false;
             GameBox.IsEnabled = false;
             OutputButton.IsEnabled = false;
             InputButton.IsEnabled = false;
@@ -141,6 +144,8 @@ namespace PersonaTextReplacer
             ReplaceButton.IsEnabled = true;
             CaseCheckbox.IsEnabled = true;
             WholeWordCheckbox.IsEnabled = true;
+            ParamCheckbox.IsEnabled = true;
+            BustupNukeCheckbox.IsEnabled = true;
             GameBox.IsEnabled = true;
             OutputButton.IsEnabled = true;
             InputButton.IsEnabled = true;
@@ -211,6 +216,11 @@ namespace PersonaTextReplacer
         private void ParamCheckBox_Checked(object sender, RoutedEventArgs e)
         {
             Settings.Default.Param = (bool)ParamCheckbox.IsChecked;
+            Settings.Default.Save();
+        }
+        private void BustupNukeCheckBox_Checked(object sender, RoutedEventArgs e)
+        {
+            Settings.Default.BustupNuke = (bool)BustupNukeCheckbox.IsChecked;
             Settings.Default.Save();
         }
     }

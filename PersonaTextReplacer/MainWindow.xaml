@@ -9,7 +9,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="50"/>
             <RowDefinition Height="45"/>
-            <RowDefinition Height="60"/>
+            <RowDefinition Height="85"/>
             <RowDefinition Height="30"/>
             <RowDefinition/>
             <RowDefinition Height="30"/>
@@ -39,6 +39,7 @@
             <CheckBox Name="CaseCheckbox" Checked="CaseCheckBox_Checked" Unchecked="CaseCheckBox_Checked" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Check Case" Foreground="White"  />
             <CheckBox Name="WholeWordCheckbox" Checked="WholeWordCheckBox_Checked" Unchecked="WholeWordCheckBox_Checked" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Match Whole Word" Foreground="White" Margin="0,5,0,0" />
             <CheckBox Name="ParamCheckbox" Checked="ParamCheckBox_Checked" Unchecked="ParamCheckBox_Checked" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Replace Params" Foreground="White" Margin="0,5,0,0" />
+            <CheckBox Name="BustupNukeCheckbox" Checked="BustupNukeCheckBox_Checked" Unchecked="BustupNukeCheckBox_Checked" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Bustup Nuke (For Mudkip)" Foreground="White" Margin="0,5,0,0" />
         </StackPanel>
         <TextBlock Grid.ColumnSpan="3" Foreground="White" Text="Words to Replace (separated by newlines):" Grid.Row="3" FontSize="20" Margin="10,0,0,0"/>
         <TextBox Name="Input" BorderBrush="#353535" Grid.ColumnSpan="3" Foreground="White" Background="#252525" Grid.Row="4" Margin="10" Padding="5" AcceptsReturn="True"/>
